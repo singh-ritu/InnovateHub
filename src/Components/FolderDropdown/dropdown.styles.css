@@ -1,0 +1,12 @@
+.dropdown-trigger {
+  padding: 10px 8px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+  }
+}

@@ -7,8 +7,11 @@ import command from "../../assets/command.svg";
 import development from "../../assets/development.svg";
 import plusSquare from "../../assets/plusSquare.svg";
 import marketing from "../../assets/marketing.svg";
+import user from "../../assets/user.svg";
 
-import FolderDropdown from "./FolderDropdown";
+import help from "../../assets/help.svg";
+
+import FolderDropdown from "../FolderDropdown";
 
 import "./sidebar.styles.css";
 import Avatar from "@mui/material/Avatar";
@@ -20,7 +23,7 @@ function sidebar() {
           <div className="heading-info">
             <Logo image={headinglogo} />
             <div style={{ marginLeft: "8px" }}>
-              <p style={{ margin: 0 }}>INC</p>
+              <p style={{ margin: 0, fontSize: "10px" }}>INC</p>
               <span className="heading">InnovateHub</span>
             </div>
           </div>
@@ -63,13 +66,22 @@ function sidebar() {
           </div>
         </div>
         <div className="folder-container">
-          <div className="folder-heading">
-            <span>FOLDERS</span>
-            <p>+</p>
-          </div>
-          <div className="dropdown">
-            <FolderDropdown />
-          </div>
+          <span>FOLDERS</span>
+          <p>+</p>
+        </div>
+        <FolderDropdown name="products" />
+        <FolderDropdown name="Sales" />
+        <FolderDropdown name="Design" />
+        <FolderDropdown name="Office" />
+        <FolderDropdown name="Legal" />
+
+        <div className="bottom-btns">
+          <img src={user} style={{ marginRight: "4px" }} />
+          Invite teammates
+        </div>
+        <div className="bottom-btns">
+          <img src={help} style={{ marginRight: "4px" }} />
+          Help and First steps
         </div>
       </div>
     </>

@@ -12,10 +12,12 @@
   margin-bottom: 10px;
 }
 .heading {
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 600;
 }
 .heading-info {
   display: flex;
+  align-items: center;
 }
 .btn {
   display: flex;
@@ -34,12 +36,15 @@
   padding: 0 8px;
 }
 .folder-container {
-  border: 1px solid rgb(202, 199, 199);
-  padding: 0 8px;
   border-radius: 8px;
-}
-.folder-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.bottom-btns {
+  display: flex;
+  align-items: center;
+  padding: 10px 8px;
+
+  margin-bottom: 4px;
 }

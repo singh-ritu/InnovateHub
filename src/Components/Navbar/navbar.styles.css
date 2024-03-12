@@ -1,6 +1,6 @@
 .navbar {
   border: 1px solid grey;
-  border-radius: 16px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,7 +14,7 @@
   /* border: 1px solid grey; */
 }
 .input-container {
-  border-radius: 4px;
+  border-radius: 12px;
   padding: 4px 2px;
   border: 1px solid grey;
   margin: 0 8px;
@@ -28,5 +28,10 @@
   border: 1px solid black;
   border-radius: 8px;
   margin-right: 8px;
-  padding: 4px;
+  padding: 0px 4px;
+  display: flex;
+}
+.nav-heading {
+  font-size: 25px;
+  font-weight: 600;
 }
