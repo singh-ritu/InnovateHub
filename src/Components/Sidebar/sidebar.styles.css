@@ -1,12 +1,13 @@
 .sidebar {
   padding: 20px;
   border-radius: 16px;
-  border: 1px solid rgb(202, 199, 199);
+  border: 1px solid rgb(137, 128, 128);
   width: 100%;
   height: 100%;
 }
 .sidebar-heading {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
 }
@@ -17,6 +18,27 @@
   display: flex;
 }
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid rgb(202, 199, 199);
+  border-radius: 8px;
+  padding: 10px 8px;
+  margin-bottom: 4px;
+}
+.sideComponent {
+  display: flex;
+  border: 1px solid rgb(202, 199, 199);
+  border-radius: 8px;
+  padding: 0 8px;
+}
+.folder-container {
+  border: 1px solid rgb(202, 199, 199);
+  padding: 0 8px;
+  border-radius: 8px;
+}
+.folder-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;

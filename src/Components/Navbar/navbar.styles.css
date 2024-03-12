@@ -1,0 +1,32 @@
+.navbar {
+  border: 1px solid grey;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.input {
+  border-radius: 4px;
+  padding: 4px 2px;
+  border: none;
+
+  /* border: 1px solid grey; */
+}
+.input-container {
+  border-radius: 4px;
+  padding: 4px 2px;
+  border: 1px solid grey;
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+}
+.input:focus {
+  outline: none;
+}
+.nav-btn {
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-right: 8px;
+  padding: 4px;
+}
