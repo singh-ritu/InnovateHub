@@ -1,9 +1,9 @@
 import React from "react";
 import "./logo.styles.css";
-function Logo({ image }) {
+function Logo({ image, size }) {
   return (
     <>
-      <img src={image} className="logo" />
+      <img src={image} className={size === "small" ? "logo small" : "logo"} />
     </>
   );
 }
