@@ -109,7 +109,23 @@ export default function CustomizedTables() {
                 </TableCell>
                 <StyledTableCell>{row.desc}</StyledTableCell>
                 <StyledTableCell>{row.members}</StyledTableCell>
-                <StyledTableCell>{row.categories}</StyledTableCell>
+                <StyledTableCell>
+                  <div style={{ display: "flex" }}>
+                    {row.categories.map((category, index) => (
+                      <div
+                        style={{
+                          color: category.color,
+                          backgroundColor: category.bg,
+                          border: `1px solid ${category.color}`,
+                        }}
+                        key={index}
+                        className="category"
+                      >
+                        {category.name}
+                      </div>
+                    ))}
+                  </div>
+                </StyledTableCell>
                 <StyledTableCell>
                   <div>
                     {row.tags.map((tag, index) => (
@@ -126,27 +142,24 @@ export default function CustomizedTables() {
       </TableContainer>
       <Snackbar
         anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-        open={selected.length > 0}
         onClose={selected.length === 0}
-        message={
-          <>
-            <div className="snackbar">
-              <div className="btn">
-                <img src={archive} />
-                Archive
-              </div>
-              <div className="btn">
-                <img src={trash} />
-                Delete
-              </div>
-              <div className="btn">
-                more
-                <img src={down} />
-              </div>
-            </div>
-          </>
-        }
-      />
+        open={selected.length > 0}
+      >
+        <div className="snackbar">
+          <div className="btn">
+            <img src={archive} />
+            Archive
+          </div>
+          <div className="btn">
+            <img src={trash} />
+            Delete
+          </div>
+          <div className="btn">
+            more
+            <img src={down} />
+          </div>
+        </div>
+      </Snackbar>
     </>
   );
 }

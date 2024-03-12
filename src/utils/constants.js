@@ -15,7 +15,13 @@ export const tableData = [
     logo: Wix,
     desc: "Develop a personalised brand...",
     members: [],
-    categories: [],
+    categories: [
+      {
+        color: "purple",
+        bg: "#cdc1f7",
+        name: "Automation",
+      },
+    ],
     tags: ["DigitalTransformation"],
   },
   {
@@ -23,7 +29,18 @@ export const tableData = [
     logo: Shopify,
     desc: "Introduce a cloud based platform...",
     members: [],
-    categories: [],
+    categories: [
+      {
+        color: "red",
+        bg: " #ffd4d4",
+        name: "E-commerce",
+      },
+      {
+        color: " #fac505",
+        bg: "#fffacc",
+        name: "B2B",
+      },
+    ],
     tags: ["OnlineShopping"],
   },
   {
@@ -31,7 +48,18 @@ export const tableData = [
     logo: MailChimp,
     desc: "Develop a mobile app aimed...",
     members: [],
-    categories: [],
+    categories: [
+      {
+        color: "green",
+        bg: " #d4ffdb",
+        name: "SAAS",
+      },
+      {
+        color: " #fac505",
+        bg: "#fffacc",
+        name: "Mobile",
+      },
+    ],
     tags: ["TechInnovation"],
   },
   {
@@ -39,7 +67,13 @@ export const tableData = [
     logo: PayPal,
     desc: "This program could include...",
     members: [],
-    categories: [],
+    categories: [
+      {
+        color: "green",
+        bg: " #d4ffdb",
+        name: "MarketPlace",
+      },
+    ],
     tags: ["BuySellOnline"],
   },
   {
@@ -47,7 +81,18 @@ export const tableData = [
     logo: Disney,
     desc: "Introduce a B2B solution for...",
     members: [],
-    categories: [],
+    categories: [
+      {
+        color: "red",
+        bg: " #ffd4d4",
+        name: "B2B",
+      },
+      {
+        color: " #fac505",
+        bg: "#fffacc",
+        name: "B2C",
+      },
+    ],
     tags: ["BusinessPartner"],
   },
   {
@@ -55,7 +100,18 @@ export const tableData = [
     logo: Intercom,
     desc: "Implement an AI driven content...",
     members: [],
-    categories: [],
+    categories: [
+      {
+        color: "blue",
+        bg: "#c2d3ff",
+        name: "Technolgy",
+      },
+      {
+        color: "green",
+        bg: " #d4ffdb",
+        name: "SAAS",
+      },
+    ],
     tags: ["SmartFinance"],
   },
   {
@@ -63,7 +119,18 @@ export const tableData = [
     logo: Google,
     desc: "Develop a personalised brand",
     members: [],
-    categories: [],
+    categories: [
+      {
+        color: " #fac505",
+        bg: "#fffacc",
+        name: "Finance",
+      },
+      {
+        color: "purple",
+        bg: "#cdc1f7",
+        name: "Automation",
+      },
+    ],
     tags: ["SmartFinance"],
   },
   {
@@ -71,7 +138,13 @@ export const tableData = [
     logo: Evernote,
     desc: "Offer a comprehensive cyber...",
     members: [],
-    categories: [],
+    categories: [
+      {
+        color: " #fac505",
+        bg: "#fffacc",
+        name: "Trannsportation",
+      },
+    ],
     tags: ["LogisticsTech"],
   },
   {
@@ -79,7 +152,18 @@ export const tableData = [
     logo: Microsoft,
     desc: "Launch an advisory service...",
     members: [],
-    categories: [],
+    categories: [
+      {
+        color: "#9000ad",
+        bg: " #f7cfff",
+        name: "Publishing",
+      },
+      {
+        color: " #fac505",
+        bg: "#fffacc",
+        name: "B2C",
+      },
+    ],
     tags: ["B2CMarketing"],
   },
   {
@@ -87,7 +171,13 @@ export const tableData = [
     logo: Invision,
     desc: "This tool will analyze...",
     members: [],
-    categories: [],
+    categories: [
+      {
+        color: "blue",
+        bg: "#c2d3ff",
+        name: "WebSeries",
+      },
+    ],
     tags: ["APIIntegration"],
   },
 ];
