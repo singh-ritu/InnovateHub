@@ -13,6 +13,8 @@ import down from "../../assets/down.svg";
 import archive from "../../assets/archive.svg";
 import trash from "../../assets/trash.svg";
 import "./table.styles.css";
+import Avatar from "@mui/material/Avatar";
+import AvatarGroup from "@mui/material/AvatarGroup";
 
 import { tableData } from "../../utils/constants";
 import Logo from "../Logo/Logo";
@@ -108,7 +110,14 @@ export default function CustomizedTables() {
                   </div>
                 </TableCell>
                 <StyledTableCell>{row.desc}</StyledTableCell>
-                <StyledTableCell>{row.members}</StyledTableCell>
+                <StyledTableCell>
+                  <AvatarGroup max={4} sx={{ justifyContent: "flex-end" }}>
+                    {row.members.map((member, index) => (
+                      <Avatar key={index} src={member} />
+                    ))}
+                  </AvatarGroup>
+                </StyledTableCell>
+                <StyledTableCell></StyledTableCell>
                 <StyledTableCell>
                   <div style={{ display: "flex" }}>
                     {row.categories.map((category, index) => (
@@ -146,6 +155,13 @@ export default function CustomizedTables() {
         open={selected.length > 0}
       >
         <div className="snackbar">
+          <div className="counter-display">{selected.length}</div>
+          <div style={{ marginRight: 8 }}>selected</div>
+          <div className="btn">
+            <img src={archive} />
+            Selected
+          </div>
+
           <div className="btn">
             <img src={archive} />
             Archive

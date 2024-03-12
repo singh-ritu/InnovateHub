@@ -8,13 +8,26 @@ import Google from "../assets/google.jpg";
 import Evernote from "../assets/Evernote.jpg";
 import Microsoft from "../assets/Microsoft.jpg";
 import Invision from "../assets/Invision.jpg";
+import dp1 from "../assets/dp1.jpg";
+import dp2 from "../assets/dp2.jpg";
+import dp3 from "../assets/dp3.jpg";
+import dp4 from "../assets/dp4.jpg";
+import dp5 from "../assets/dp5.jpg";
+import dp6 from "../assets/dp6.jpg";
+import dp7 from "../assets/dp7.jpg";
+import dp8 from "../assets/dp8.jpg";
+import dp9 from "../assets/dp9.jpg";
+import dp10 from "../assets/dp10.jpg";
+import dp11 from "../assets/dp11.jpg";
+import dp12 from "../assets/dp12.jpg";
+import dp13 from "../assets/dp13.jpg";
 
 export const tableData = [
   {
     brandName: "Wix",
     logo: Wix,
     desc: "Develop a personalised brand...",
-    members: [],
+    members: [dp2, dp1, dp3, dp5, dp13],
     categories: [
       {
         color: "purple",
@@ -28,7 +41,7 @@ export const tableData = [
     brandName: "Shopify",
     logo: Shopify,
     desc: "Introduce a cloud based platform...",
-    members: [],
+    members: [dp12, dp13, dp1, dp5],
     categories: [
       {
         color: "red",
@@ -47,7 +60,7 @@ export const tableData = [
     brandName: "Mailchimp",
     logo: MailChimp,
     desc: "Develop a mobile app aimed...",
-    members: [],
+    members: [dp7, dp9],
     categories: [
       {
         color: "green",
@@ -66,7 +79,7 @@ export const tableData = [
     brandName: "PayPal",
     logo: PayPal,
     desc: "This program could include...",
-    members: [],
+    members: [dp11, dp10, dp6],
     categories: [
       {
         color: "green",
@@ -80,7 +93,7 @@ export const tableData = [
     brandName: "Disney",
     logo: Disney,
     desc: "Introduce a B2B solution for...",
-    members: [],
+    members: [dp6, dp2, dp1, dp12, dp10],
     categories: [
       {
         color: "red",
@@ -99,7 +112,7 @@ export const tableData = [
     brandName: "Intercom",
     logo: Intercom,
     desc: "Implement an AI driven content...",
-    members: [],
+    members: [dp12, dp1, dp4, dp2],
     categories: [
       {
         color: "blue",
@@ -118,7 +131,7 @@ export const tableData = [
     brandName: "Google",
     logo: Google,
     desc: "Develop a personalised brand",
-    members: [],
+    members: [dp12, dp1, dp3],
     categories: [
       {
         color: " #fac505",
@@ -137,7 +150,7 @@ export const tableData = [
     brandName: "Evernote",
     logo: Evernote,
     desc: "Offer a comprehensive cyber...",
-    members: [],
+    members: [dp4, dp6, dp1, dp8],
     categories: [
       {
         color: " #fac505",
@@ -151,7 +164,7 @@ export const tableData = [
     brandName: "Microsoft",
     logo: Microsoft,
     desc: "Launch an advisory service...",
-    members: [],
+    members: [dp12, dp1, dp5],
     categories: [
       {
         color: "#9000ad",
@@ -170,7 +183,7 @@ export const tableData = [
     brandName: "Invision",
     logo: Invision,
     desc: "This tool will analyze...",
-    members: [],
+    members: [dp1, dp10, dp8],
     categories: [
       {
         color: "blue",
