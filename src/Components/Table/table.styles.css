@@ -1,0 +1,13 @@
+.snackbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  /* background-color: rgb(255, 255, 255); */
+}
+.tag {
+  border: 1px solid lightgrey;
+  background-color: #f2f2f2;
+  padding: 0 8px;
+  border-radius: 8px;
+  width: fit-content;
+}

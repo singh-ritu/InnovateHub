@@ -16,7 +16,7 @@ export const tableData = [
     desc: "Develop a personalised brand...",
     members: [],
     categories: [],
-    tags: [],
+    tags: ["DigitalTransformation"],
   },
   {
     brandName: "Shopify",
@@ -24,7 +24,7 @@ export const tableData = [
     desc: "Introduce a cloud based platform...",
     members: [],
     categories: [],
-    tags: [],
+    tags: ["OnlineShopping"],
   },
   {
     brandName: "Mailchimp",
@@ -32,7 +32,7 @@ export const tableData = [
     desc: "Develop a mobile app aimed...",
     members: [],
     categories: [],
-    tags: [],
+    tags: ["TechInnovation"],
   },
   {
     brandName: "PayPal",
@@ -40,7 +40,7 @@ export const tableData = [
     desc: "This program could include...",
     members: [],
     categories: [],
-    tags: [],
+    tags: ["BuySellOnline"],
   },
   {
     brandName: "Disney",
@@ -48,7 +48,7 @@ export const tableData = [
     desc: "Introduce a B2B solution for...",
     members: [],
     categories: [],
-    tags: [],
+    tags: ["BusinessPartner"],
   },
   {
     brandName: "Intercom",
@@ -56,7 +56,7 @@ export const tableData = [
     desc: "Implement an AI driven content...",
     members: [],
     categories: [],
-    tags: [],
+    tags: ["SmartFinance"],
   },
   {
     brandName: "Google",
@@ -64,7 +64,7 @@ export const tableData = [
     desc: "Develop a personalised brand",
     members: [],
     categories: [],
-    tags: [],
+    tags: ["SmartFinance"],
   },
   {
     brandName: "Evernote",
@@ -72,7 +72,7 @@ export const tableData = [
     desc: "Offer a comprehensive cyber...",
     members: [],
     categories: [],
-    tags: [],
+    tags: ["LogisticsTech"],
   },
   {
     brandName: "Microsoft",
@@ -80,7 +80,7 @@ export const tableData = [
     desc: "Launch an advisory service...",
     members: [],
     categories: [],
-    tags: [],
+    tags: ["B2CMarketing"],
   },
   {
     brandName: "Invision",
@@ -88,6 +88,6 @@ export const tableData = [
     desc: "This tool will analyze...",
     members: [],
     categories: [],
-    tags: [],
+    tags: ["APIIntegration"],
   },
 ];

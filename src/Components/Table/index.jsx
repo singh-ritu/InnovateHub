@@ -110,7 +110,15 @@ export default function CustomizedTables() {
                 <StyledTableCell>{row.desc}</StyledTableCell>
                 <StyledTableCell>{row.members}</StyledTableCell>
                 <StyledTableCell>{row.categories}</StyledTableCell>
-                <StyledTableCell>{row.tags}</StyledTableCell>
+                <StyledTableCell>
+                  <div>
+                    {row.tags.map((tag, index) => (
+                      <div className="tag" key={index}>
+                        #{tag}
+                      </div>
+                    ))}
+                  </div>
+                </StyledTableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -123,15 +131,15 @@ export default function CustomizedTables() {
         message={
           <>
             <div className="snackbar">
-              <div>
+              <div className="btn">
                 <img src={archive} />
                 Archive
               </div>
-              <div>
+              <div className="btn">
                 <img src={trash} />
                 Delete
               </div>
-              <div>
+              <div className="btn">
                 more
                 <img src={down} />
               </div>
