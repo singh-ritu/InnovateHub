@@ -9,6 +9,10 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Checkbox from "@mui/material/Checkbox";
 import Snackbar from "@mui/material/Snackbar";
+import down from "../../assets/down.svg";
+import archive from "../../assets/archive.svg";
+import trash from "../../assets/trash.svg";
+import "./table.styles.css";
 
 import { tableData } from "../../utils/constants";
 import Logo from "../Logo/Logo";
@@ -116,7 +120,24 @@ export default function CustomizedTables() {
         anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
         open={selected.length > 0}
         onClose={selected.length === 0}
-        message="I love snacks"
+        message={
+          <>
+            <div className="snackbar">
+              <div>
+                <img src={archive} />
+                Archive
+              </div>
+              <div>
+                <img src={trash} />
+                Delete
+              </div>
+              <div>
+                more
+                <img src={down} />
+              </div>
+            </div>
+          </>
+        }
       />
     </>
   );
