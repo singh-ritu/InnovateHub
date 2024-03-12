@@ -7,7 +7,9 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import { Checkbox } from "@mui/material";
+import Checkbox from "@mui/material/Checkbox";
+import Snackbar from "@mui/material/Snackbar";
+
 import { tableData } from "../../utils/constants";
 import Logo from "../Logo/Logo";
 
@@ -46,68 +48,76 @@ export default function CustomizedTables() {
   };
 
   return (
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table">
-        <TableHead>
-          <TableRow>
-            <TableCell>
-              <Checkbox
-                color="primary"
-                // indeterminate={numSelected > 0 && numSelected < rowCount}
-                // checked={rowCount > 0 && numSelected === rowCount}
-                // onChange={onSelectAllClick}
-                inputProps={{
-                  "aria-label": "select all desserts",
-                }}
-              />
-            </TableCell>
-            <TableCell>Brand</TableCell>
-            <TableCell>Description</TableCell>
-            <TableCell>Members</TableCell>
-            <TableCell>Categories</TableCell>
-            <TableCell>Tags</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {tableData.map((row, index) => (
-            <TableRow
-              hover
-              onClick={(event) => handleClick(event, row.brandName)}
-              role="checkbox"
-              aria-checked={isSelected(row.brandName)}
-              tabIndex={-1}
-              key={row.brandName}
-              selected={isSelected(row.brandName)}
-              sx={{ cursor: "pointer" }}
-            >
-              <TableCell padding="checkbox">
+    <>
+      <TableContainer component={Paper}>
+        <Table sx={{ minWidth: 700 }} aria-label="customized table">
+          <TableHead>
+            <TableRow>
+              <TableCell>
                 <Checkbox
                   color="primary"
-                  checked={isSelected(row.brandName)}
+                  // indeterminate={numSelected > 0 && numSelected < rowCount}
+                  // checked={rowCount > 0 && numSelected === rowCount}
+                  // onChange={onSelectAllClick}
                   inputProps={{
-                    "aria-labelledby": `enhanced-table-checkbox-${index}`,
+                    "aria-label": "select all desserts",
                   }}
                 />
               </TableCell>
-              <TableCell
-                component="th"
-                id={`enhanced-table-checkbox-${index}`}
-                scope="row"
-                padding="none"
-              >
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <Logo image={row.logo} size={"small"} />
-                  <div style={{ marginLeft: 4 }}>{row.brandName}</div>
-                </div>
-              </TableCell>
-              <StyledTableCell>{row.desc}</StyledTableCell>
-              <StyledTableCell>{row.members}</StyledTableCell>
-              <StyledTableCell>{row.categories}</StyledTableCell>
-              <StyledTableCell>{row.tags}</StyledTableCell>
+              <TableCell>Brand</TableCell>
+              <TableCell>Description</TableCell>
+              <TableCell>Members</TableCell>
+              <TableCell>Categories</TableCell>
+              <TableCell>Tags</TableCell>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+          </TableHead>
+          <TableBody>
+            {tableData.map((row, index) => (
+              <TableRow
+                hover
+                onClick={(event) => handleClick(event, row.brandName)}
+                role="checkbox"
+                aria-checked={isSelected(row.brandName)}
+                tabIndex={-1}
+                key={row.brandName}
+                selected={isSelected(row.brandName)}
+                sx={{ cursor: "pointer" }}
+              >
+                <TableCell padding="checkbox">
+                  <Checkbox
+                    color="primary"
+                    checked={isSelected(row.brandName)}
+                    inputProps={{
+                      "aria-labelledby": `enhanced-table-checkbox-${index}`,
+                    }}
+                  />
+                </TableCell>
+                <TableCell
+                  component="th"
+                  id={`enhanced-table-checkbox-${index}`}
+                  scope="row"
+                  padding="none"
+                >
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <Logo image={row.logo} size={"small"} />
+                    <div style={{ marginLeft: 4 }}>{row.brandName}</div>
+                  </div>
+                </TableCell>
+                <StyledTableCell>{row.desc}</StyledTableCell>
+                <StyledTableCell>{row.members}</StyledTableCell>
+                <StyledTableCell>{row.categories}</StyledTableCell>
+                <StyledTableCell>{row.tags}</StyledTableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <Snackbar
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        open={selected.length > 0}
+        onClose={selected.length === 0}
+        message="I love snacks"
+      />
+    </>
   );
 }

@@ -1,5 +1,8 @@
 import React from "react";
 import sort from "../../assets/sort.svg";
+import brand from "../../assets/brand.svg";
+import down from "../../assets/down.svg";
+
 import filter from "../../assets/filter.svg";
 import plusSquare from "../../assets/plusSquare.svg";
 import importExport from "../../assets/importExport.svg";
@@ -10,6 +13,19 @@ function Menu() {
     <>
       <div className="menu-btns">
         <div style={{ display: "flex" }}>
+          <div className="btn">
+            <img src={brand} />
+            <b> All Brands</b>
+            <img src={down} />
+          </div>
+          <div className="btn">
+            <b>Desk</b>
+            <img src={down} />
+          </div>
+          <div className="btn">
+            <b> Tags</b>
+            <img src={down} />
+          </div>
           <div className="btn">
             <img src={sort} />
             sort

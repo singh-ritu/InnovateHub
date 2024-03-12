@@ -13,7 +13,7 @@ function App() {
         </div>
         <div className="middle-container">
           <Navbar />
-          <Menu />\
+          <Menu />
           <Table />
         </div>
       </div>
