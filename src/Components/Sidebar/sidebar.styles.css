@@ -2,7 +2,6 @@
   padding: 20px;
   border-radius: 16px;
   border: 1px solid rgb(137, 128, 128);
-  width: 100%;
   height: 100%;
 }
 .sidebar-heading {
@@ -19,6 +18,13 @@
   display: flex;
   align-items: center;
 }
+.headin-details {
+  margin-left: 8px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
 .btn {
   display: flex;
   align-items: center;
@@ -28,6 +34,9 @@
   border-radius: 8px;
   padding: 10px 8px;
   margin-bottom: 4px;
+}
+.btn-name {
+  color: rgb(158, 152, 152);
 }
 .sideComponent {
   display: flex;
@@ -47,4 +56,41 @@
   padding: 10px 8px;
 
   margin-bottom: 4px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(187, 177, 177);
+  border-radius: 8px;
+  padding: 10px 8px;
+}
+.add-btn {
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+  padding: 8px;
+}
+@media screen and (max-width: 768px) {
+  .heading-details {
+    display: none;
+  }
+  .avatar {
+    display: none;
+  }
+  .sideComponent {
+    display: none;
+  }
+  .btn-name {
+    display: none;
+  }
+  .folder {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .details {
+    display: none;
+  }
 }

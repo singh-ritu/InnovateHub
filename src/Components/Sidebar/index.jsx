@@ -22,17 +22,19 @@ function sidebar() {
         <div className="sidebar-heading">
           <div className="heading-info">
             <Logo image={headinglogo} />
-            <div style={{ marginLeft: "8px" }}>
+            <div className="heading-details">
               <p style={{ margin: 0, fontSize: "10px" }}>INC</p>
               <span className="heading">InnovateHub</span>
             </div>
           </div>
-          <Avatar alt="Travis Howard" src={dp1} />
+          <div className="avatar">
+            <Avatar alt="Travis Howard" src={dp1} />
+          </div>
         </div>
         <div className="btn">
-          <div>
+          <div className="icons">
             <img src={design} />
-            <b>Design Team</b>
+            <b className="btn-name">Design Team</b>
           </div>
           <div className="sideComponent">
             <img src={command} />
@@ -40,9 +42,9 @@ function sidebar() {
           </div>
         </div>
         <div className="btn">
-          <div>
+          <div className="icons">
             <img src={marketing} />
-            <b>Marketing Team</b>
+            <b className="btn-name">Marketing Team</b>
           </div>
           <div className="sideComponent">
             <img src={command} />
@@ -50,9 +52,9 @@ function sidebar() {
           </div>
         </div>
         <div className="btn">
-          <div>
+          <div className="icons">
             <img src={development} />
-            <b>Development Team</b>
+            <b className="btn-name">Development Team</b>
           </div>
           <div className="sideComponent">
             <img src={command} />
@@ -60,14 +62,14 @@ function sidebar() {
           </div>
         </div>
         <div className="btn">
-          <div>
+          <div className="icons">
             <img src={plusSquare} />
-            <b style={{ color: "rgb(158, 152, 152)" }}>Create a Team</b>
+            <b className="btn-name">Create a Team</b>
           </div>
         </div>
         <div className="folder-container">
-          <span>FOLDERS</span>
-          <p>+</p>
+          <span className="folder">FOLDERS</span>
+          <p style={{ fontSize: "30px", fontWeight: "600" }}>+</p>
         </div>
         <FolderDropdown name="products" />
         <FolderDropdown name="Sales" />
@@ -77,11 +79,16 @@ function sidebar() {
 
         <div className="bottom-btns">
           <img src={user} style={{ marginRight: "4px" }} />
-          Invite teammates
+          <div className="details">Invite teammates</div>
         </div>
         <div className="bottom-btns">
           <img src={help} style={{ marginRight: "4px" }} />
-          Help and First steps
+          <div className="details">Help and First steps</div>
+        </div>
+
+        <div className="footer">
+          7 days Left on trial
+          <div className="add-btn">Add Billing</div>
         </div>
       </div>
     </>

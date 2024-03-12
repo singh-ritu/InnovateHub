@@ -12,7 +12,7 @@ function FolderDropdown({ name }) {
   return (
     <div>
       <div className="dropdown-trigger" onClick={openDropdown}>
-        {name}
+        <div className="dropdown-name">{name}</div>
         <img src={down} />
       </div>
 
