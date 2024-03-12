@@ -36,6 +36,7 @@ export const tableData = [
       },
     ],
     tags: ["DigitalTransformation"],
+    meetings: [],
   },
   {
     brandName: "Shopify",
@@ -55,6 +56,7 @@ export const tableData = [
       },
     ],
     tags: ["OnlineShopping"],
+    meetings: [],
   },
   {
     brandName: "Mailchimp",
@@ -74,6 +76,7 @@ export const tableData = [
       },
     ],
     tags: ["TechInnovation"],
+    meetings: [],
   },
   {
     brandName: "PayPal",
@@ -88,6 +91,7 @@ export const tableData = [
       },
     ],
     tags: ["BuySellOnline"],
+    meetings: [],
   },
   {
     brandName: "Disney",
@@ -107,6 +111,7 @@ export const tableData = [
       },
     ],
     tags: ["BusinessPartner"],
+    meetings: [],
   },
   {
     brandName: "Intercom",
@@ -126,6 +131,7 @@ export const tableData = [
       },
     ],
     tags: ["SmartFinance"],
+    meetings: [],
   },
   {
     brandName: "Google",
@@ -145,6 +151,7 @@ export const tableData = [
       },
     ],
     tags: ["SmartFinance"],
+    meetings: [],
   },
   {
     brandName: "Evernote",
@@ -159,6 +166,7 @@ export const tableData = [
       },
     ],
     tags: ["LogisticsTech"],
+    meetings: [],
   },
   {
     brandName: "Microsoft",
@@ -178,6 +186,7 @@ export const tableData = [
       },
     ],
     tags: ["B2CMarketing"],
+    meetings: [],
   },
   {
     brandName: "Invision",
@@ -192,5 +201,6 @@ export const tableData = [
       },
     ],
     tags: ["APIIntegration"],
+    meetings: [],
   },
 ];

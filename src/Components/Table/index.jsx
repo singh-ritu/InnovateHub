@@ -75,6 +75,7 @@ export default function CustomizedTables() {
               <TableCell>Members</TableCell>
               <TableCell>Categories</TableCell>
               <TableCell>Tags</TableCell>
+              <TableCell>Next Meeting</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -117,7 +118,6 @@ export default function CustomizedTables() {
                     ))}
                   </AvatarGroup>
                 </StyledTableCell>
-                <StyledTableCell></StyledTableCell>
                 <StyledTableCell>
                   <div style={{ display: "flex" }}>
                     {row.categories.map((category, index) => (
@@ -143,6 +143,11 @@ export default function CustomizedTables() {
                       </div>
                     ))}
                   </div>
+                </StyledTableCell>
+                <StyledTableCell>
+                  {row.meetings.map((meeting, index) => (
+                    <h1 key={index}>{meeting}</h1>
+                  ))}
                 </StyledTableCell>
               </TableRow>
             ))}
