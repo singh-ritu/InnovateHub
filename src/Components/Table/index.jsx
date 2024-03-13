@@ -16,7 +16,6 @@ import "./table.styles.css";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
 
-import { tableData } from "../../utils/constants";
 import Logo from "../Logo/Logo";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -30,7 +29,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
 }));
 
-export default function CustomizedTables() {
+export default function CustomizedTables({ tableData }) {
   const [selected, setSelected] = useState([]);
 
   const isSelected = (id) => selected.indexOf(id) !== -1;

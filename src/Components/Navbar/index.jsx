@@ -5,7 +5,7 @@ import search from "../../assets/search.svg";
 
 import "./navbar.styles.css";
 
-function Navbar() {
+function Navbar({ searchTerm, handleChange }) {
   return (
     <>
       <div className="navbar">
@@ -13,7 +13,13 @@ function Navbar() {
         <div style={{ display: "flex" }}>
           <div className="input-container">
             <img src={search} />
-            <input type="text" placeholder="search for.." className="input" />
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={handleChange}
+              placeholder="search for.."
+              className="input"
+            />
           </div>
           <div className="nav-btn">
             <img src={messageSquare} />
