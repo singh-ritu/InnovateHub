@@ -38,7 +38,7 @@ function sidebar() {
           </div>
           <div className="sideComponent">
             <img src={command} />
-            <p style={{ margin: 0 }}>x+1</p>
+            <p style={{ margin: 0 }}>+1</p>
           </div>
         </div>
         <div className="btn">
@@ -48,7 +48,7 @@ function sidebar() {
           </div>
           <div className="sideComponent">
             <img src={command} />
-            <p style={{ margin: 0 }}>x+2</p>
+            <p style={{ margin: 0 }}>+2</p>
           </div>
         </div>
         <div className="btn">
@@ -58,7 +58,7 @@ function sidebar() {
           </div>
           <div className="sideComponent">
             <img src={command} />
-            <p style={{ margin: 0 }}>x+3</p>
+            <p style={{ margin: 0 }}>+3</p>
           </div>
         </div>
         <div className="btn">
@@ -72,7 +72,7 @@ function sidebar() {
           <p style={{ fontSize: "30px", fontWeight: "600" }}>+</p>
         </div>
 
-        <FolderDropdown name="products" />
+        <FolderDropdown name="Products" />
         <FolderDropdown name="Sales" />
         <FolderDropdown name="Design" />
         <FolderDropdown name="Office" />
