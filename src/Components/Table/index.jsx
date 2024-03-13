@@ -55,16 +55,13 @@ export default function CustomizedTables() {
 
   return (
     <>
-      <TableContainer component={Paper}>
+      <TableContainer style={{ maxHeight: "100vh" }} component={Paper}>
         <Table sx={{ minWidth: 700 }} aria-label="customized table">
           <TableHead>
             <TableRow>
               <TableCell>
                 <Checkbox
                   color="primary"
-                  // indeterminate={numSelected > 0 && numSelected < rowCount}
-                  // checked={rowCount > 0 && numSelected === rowCount}
-                  // onChange={onSelectAllClick}
                   inputProps={{
                     "aria-label": "select all desserts",
                   }}
@@ -166,6 +163,7 @@ export default function CustomizedTables() {
           </TableBody>
         </Table>
       </TableContainer>
+
       <Snackbar
         anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
         onClose={selected.length === 0}
@@ -174,10 +172,6 @@ export default function CustomizedTables() {
         <div className="snackbar">
           <div className="counter-display">{selected.length}</div>
           <div style={{ marginRight: 8 }}>selected</div>
-          <div className="btn">
-            <img src={archive} />
-            Selected
-          </div>
 
           <div className="btn">
             <img src={archive} />

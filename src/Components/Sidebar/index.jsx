@@ -71,6 +71,7 @@ function sidebar() {
           <span className="folder">FOLDERS</span>
           <p style={{ fontSize: "30px", fontWeight: "600" }}>+</p>
         </div>
+
         <FolderDropdown name="products" />
         <FolderDropdown name="Sales" />
         <FolderDropdown name="Design" />

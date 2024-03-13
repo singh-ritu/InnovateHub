@@ -1,7 +1,7 @@
 .sidebar {
-  padding: 20px;
+  padding: 10px;
   border-radius: 16px;
-  border: 1px solid rgb(137, 128, 128);
+  border: 1px solid #e0e0e0;
   height: 100%;
 }
 .sidebar-heading {
@@ -35,9 +35,7 @@
   padding: 10px 8px;
   margin-bottom: 4px;
 }
-.btn-name {
-  color: rgb(158, 152, 152);
-}
+
 .sideComponent {
   display: flex;
   border: 1px solid rgb(202, 199, 199);
@@ -46,6 +44,7 @@
 }
 .folder-container {
   border-radius: 8px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,24 +71,12 @@
   padding: 8px;
 }
 @media screen and (max-width: 768px) {
-  .heading-details {
-    display: none;
-  }
-  .avatar {
-    display: none;
-  }
-  .sideComponent {
-    display: none;
-  }
-  .btn-name {
-    display: none;
-  }
-  .folder {
-    display: none;
-  }
-  .footer {
-    display: none;
-  }
+  .heading-details,
+  .avatar,
+  .sideComponent,
+  .btn-name,
+  .folder,
+  .footer,
   .details {
     display: none;
   }
