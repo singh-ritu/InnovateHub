@@ -5,7 +5,7 @@ import search from "../../assets/search.svg";
 
 import "./navbar.styles.css";
 
-function index() {
+function Navbar() {
   return (
     <>
       <div className="navbar">
@@ -27,4 +27,4 @@ function index() {
   );
 }
 
-export default index;
+export default Navbar;
