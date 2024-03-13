@@ -64,6 +64,10 @@
   border-radius: 8px;
   padding: 10px 8px;
 }
+.btn-name {
+  font-size: 14px;
+  margin-left: 4px;
+}
 .add-btn {
   border-radius: 12px;
   background-color: black;
