@@ -36,7 +36,13 @@ export const tableData = [
       },
     ],
     tags: ["DigitalTransformation"],
-    meetings: [],
+    meetings: [
+      {
+        color: "green",
+        bg: "#d4ffdb ",
+        detail: "in 30 minutes",
+      },
+    ],
   },
   {
     brandName: "Shopify",
@@ -56,7 +62,13 @@ export const tableData = [
       },
     ],
     tags: ["OnlineShopping"],
-    meetings: [],
+    meetings: [
+      {
+        color: "blue",
+        bg: "#c2d3ff",
+        detail: "Tommorrow",
+      },
+    ],
   },
   {
     brandName: "Mailchimp",
@@ -76,7 +88,13 @@ export const tableData = [
       },
     ],
     tags: ["TechInnovation"],
-    meetings: [],
+    meetings: [
+      {
+        color: "blue",
+        bg: "#c2d3ff",
+        detail: "Tommorrow",
+      },
+    ],
   },
   {
     brandName: "PayPal",
@@ -91,7 +109,13 @@ export const tableData = [
       },
     ],
     tags: ["BuySellOnline"],
-    meetings: [],
+    meetings: [
+      {
+        color: "green",
+        bg: "#d4ffdb ",
+        detail: "in 6 hours",
+      },
+    ],
   },
   {
     brandName: "Disney",
@@ -111,7 +135,13 @@ export const tableData = [
       },
     ],
     tags: ["BusinessPartner"],
-    meetings: [],
+    meetings: [
+      {
+        color: "red",
+        bg: " #ffd4d4",
+        detail: "No Contact",
+      },
+    ],
   },
   {
     brandName: "Intercom",
@@ -131,7 +161,13 @@ export const tableData = [
       },
     ],
     tags: ["SmartFinance"],
-    meetings: [],
+    meetings: [
+      {
+        color: "green",
+        bg: "#d4ffdb ",
+        detail: "in 1 hour",
+      },
+    ],
   },
   {
     brandName: "Google",
@@ -151,7 +187,13 @@ export const tableData = [
       },
     ],
     tags: ["SmartFinance"],
-    meetings: [],
+    meetings: [
+      {
+        color: "green",
+        bg: "#d4ffdb ",
+        detail: "in 30 minutes",
+      },
+    ],
   },
   {
     brandName: "Evernote",
@@ -166,7 +208,13 @@ export const tableData = [
       },
     ],
     tags: ["LogisticsTech"],
-    meetings: [],
+    meetings: [
+      {
+        color: "grey",
+        bg: " rgba(225, 218, 218, 0.74)",
+        detail: "Next Month",
+      },
+    ],
   },
   {
     brandName: "Microsoft",
@@ -186,7 +234,13 @@ export const tableData = [
       },
     ],
     tags: ["B2CMarketing"],
-    meetings: [],
+    meetings: [
+      {
+        color: "red",
+        bg: " #ffd4d4",
+        detail: "No Contact",
+      },
+    ],
   },
   {
     brandName: "Invision",
@@ -201,6 +255,12 @@ export const tableData = [
       },
     ],
     tags: ["APIIntegration"],
-    meetings: [],
+    meetings: [
+      {
+        color: "grey",
+        bg: " rgba(225, 218, 218, 0.74)",
+        detail: "Next Month",
+      },
+    ],
   },
 ];

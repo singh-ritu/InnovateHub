@@ -76,6 +76,7 @@ export default function CustomizedTables() {
               <TableCell>Categories</TableCell>
               <TableCell>Tags</TableCell>
               <TableCell>Next Meeting</TableCell>
+              <TableCell>+</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -146,9 +147,20 @@ export default function CustomizedTables() {
                 </StyledTableCell>
                 <StyledTableCell>
                   {row.meetings.map((meeting, index) => (
-                    <h1 key={index}>{meeting}</h1>
+                    <div
+                      style={{
+                        color: meeting.color,
+                        backgroundColor: meeting.bg,
+                        border: `1px solid ${meeting.color}`,
+                      }}
+                      className="meetings"
+                      key={index}
+                    >
+                      {meeting.detail}
+                    </div>
                   ))}
                 </StyledTableCell>
+                <StyledTableCell></StyledTableCell>
               </TableRow>
             ))}
           </TableBody>
